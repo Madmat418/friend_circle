@@ -1,0 +1,13 @@
+<h1> Sign in page</h1>
+<form action="<%= session_url %>" method="post">
+  <label for="email">Email</label>
+  <input type="text" name="user[email]" id="email">
+  <br>
+  <label for="password">Password</label>
+  <input type="password" name="user[password]" id="password">
+  <br>
+  <input type="submit" value="Sign In">
+</form>
+
+<%= link_to "Forgot Your Password?", new_forgotten_password_url %> <br>
+<%= link_to "Not a Member? Sign up here.", new_user_url %>

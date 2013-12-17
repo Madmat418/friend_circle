@@ -1,0 +1,8 @@
+<form action="<%= buddy_circles_url%>" method="post">
+  <%@users.each_with_index do |user, index|%>
+  <label for="<%= user.id %>"><%=user.email%></label>
+	<input type="checkbox" name="friends[<%=index%>]" value="<%=user.id%>" id="<%= user.id %>"> <br>
+  <%end%>
+  <input type="submit" value="Create Buddy Circle">
+</form>
+

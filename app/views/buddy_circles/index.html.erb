@@ -1,0 +1,5 @@
+<H4>Your friend list:</H4><br>
+<% @circle.each do |friendship| %>
+<%= friendship.user.email %>
+<%= button_to "Remove Friend", buddy_circle_membership_url(friendship), :method => :delete %>
+<% end %>

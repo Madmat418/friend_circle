@@ -1,0 +1,9 @@
+<h1>Reset Password</h1>
+
+<p>Enter new password</p>
+<form action="<%= reset_password_url %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password">
+  <input type="submit" value="Submit">
+</form>

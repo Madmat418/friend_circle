@@ -1,0 +1,2 @@
+module BuddyCirclesHelper
+end
